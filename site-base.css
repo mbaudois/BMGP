@@ -1,0 +1,131 @@
+/* réinitialisations de base, ne pas toucher */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    page-break-inside:avoid;
+}
+
+/* liens vers la typo */
+@font-face {
+    font-family: 'League Gothic';
+    src: url('fonts/leaguegothic-regular-webfont.woff2') format('woff2'),
+         url('fonts/leaguegothic-regular-webfont.woff') format('woff');
+    font-weight: normal;
+}
+
+body {
+    font-family: 'League Gothic';
+    font-size: 40px;
+    text-align: center;
+    padding: 20px;
+	width: 100%;
+}
+img {
+    margin-top: 0px;
+	width: 400px;
+}
+
+.images-gauche {
+	width: 20%;
+}
+.images-gauche img {
+	float: letf;
+	margin-top: 30px;
+}
+
+.images-droite {
+	position: absolute;
+	width: 700px;
+	top: 0;
+	right: 0;
+}
+.images-droite img {
+	float: right;
+	margin-top: 30px;
+}
+
+.traits {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.canvas {
+    border: 2px solid blue;
+    position: absolute;
+    width: 430px;
+    height: 600px;
+    margin-top: 50vh;
+    top: -300px;
+    margin-left: 50%;
+    left: -215px;
+}
+.zone-travail {
+	border: 2px solid yellow;
+    position: absolute;
+    top: -100px;
+    left: -500px;
+    width: 1450px;
+    height: 90vh;
+    overflow: scroll;
+}
+.zone-outils {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8000px;
+}
+
+
+
+
+
+/* RESPONSIVE */
+
+/* ÉCRAN SEULEMENT */
+@media screen {
+    .print-only {
+        display: none;
+    }
+}
+
+/* ÉCRAN (VALEURS MINIMUM) */
+@media screen and (min-width: 480px) {
+
+}
+/* ÉCRAN (VALEURS MAXIMUM) */
+@media screen and (max-width: 480px) {
+    .titre {
+        color: red;
+    }
+}
+
+/* IMPRESSION */
+
+@media print {
+    .titre {
+        color: blue;
+    }
+    .screen-only {
+        display: none;
+    }
+    a {
+        color: black;
+    }
+	.canvas {
+		overflow: hidden;
+	}
+}
+
+@page {
+    size: 210mm 297mm;
+    margin: none;
+}
