@@ -4,6 +4,8 @@
     padding: 0;
 }
 
+html, body { margin:0; padding:0; }
+
 div {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -24,7 +26,7 @@ body {
     font-family: 'League Gothic';
     font-size: 40px;
     text-align: center;
-    padding: 20px;
+    /*padding: 20px; */
 	width: 100%;
 }
 img {
@@ -85,25 +87,18 @@ img {
     height: 8000px;
 }
 
-.BGZOO {
-	background-color: blue;
-	height: 2000px;
-}
 
-.BGREZ {
-	background-color: pink;
-	height: 2000px;
-}
-
-.BGTU {
-	background-color: red;
-	height: 2000px;
-}
-
+.BGZOO,
+.BGREZ,
+.BGTU,
 .BGSPOK {
-	background-color: green;
-	height: 2000px;
+	height: 100vh;
+	position: relative;
 }
+.BGZOO {	background-color: black;}
+.BGREZ {	background-color: #D3D3D3;}
+.BGTU {		background-color: #F7BEBC;}
+.BGSPOK {	background-color: white;}
 
 
 
