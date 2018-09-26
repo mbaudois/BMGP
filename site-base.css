@@ -14,12 +14,14 @@ div {
     page-break-inside:avoid;
 }
 
+/*lien vers typo Google Font*/
+font-family: 'Roboto', sans-serif;
+font-family: 'Oswald', sans-serif;
 /* liens vers la typo */
 @font-face {
-    font-family: 'League Gothic';
-    src: url('fonts/leaguegothic-regular-webfont.woff2') format('woff2'),
-         url('fonts/leaguegothic-regular-webfont.woff') format('woff');
-    font-weight: normal;
+    font-family: 'Gap Sans';
+    src: url('fonts/gapsans-webfont.woff') format('woff'),
+         url('fonts/gapsans-webfont.woff') format('woff');
 }
 
 body {
